@@ -9,9 +9,13 @@ namespace Ingenieria_en_software_2.obj.Debug
     public class NewXUnittest
     {
         [Fact]
-        public void Test1()
+        public void DebeCrearNuevaCarpeta()
         {
-            Assert.True(true);
+            
+           Carpeta carpeta = new Carpeta("nueva_carpeta", peso);
+
+            Assert.Equal("nueva_carpeta", carpeta.Nombre);
+            Assert.Equal(13, carpeta.Peso);
         }
     }
 }
